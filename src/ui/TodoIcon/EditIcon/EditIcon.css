@@ -1,0 +1,41 @@
+.Icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
+    /* background-color: #CCC; */
+  }
+.Icon-edit {
+  justify-self: flex-end;
+  height: 25px;
+  width: 25px;
+  color: #585858;
+  transition: all .6s ease;
+}
+.Icon-edit:hover {
+  color: rgb(41, 231, 73);
+  transform: rotate(-360deg) scale(0.9);
+  animation: shake infinite .2s linear;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

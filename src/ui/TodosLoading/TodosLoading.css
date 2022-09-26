@@ -1,0 +1,29 @@
+:root {
+    --loading-grey: #232229;
+}
+
+.TodosLoading {
+    border-radius: 20px;
+    margin-top: 24px;
+    width: 100%;
+    height: 72px;
+}
+
+.TodosLoading {
+    background-color: var(--loading-grey);
+    background: linear-gradient(
+        100deg,
+        rgba(47, 46, 51, 0.741) 0%,
+        rgba(36, 36, 43, 0.671) 50%,
+        rgba(50, 49, 54, 0.5) 60%
+    ) var(--loading-grey);
+    background-size: 200% 100%;
+    background-position-x: 180%;
+    animation: 1s loading ease-in-out infinite;
+}
+
+@keyframes loading {
+    to {
+        background-position-x: -20%;
+    }
+}

@@ -1,0 +1,57 @@
+.TodoItem {
+  background-color: #232229;
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px 1fr 50px 50px;
+  align-items: center;
+  margin-top: 24px;
+  box-shadow: 0px 3px 6px rgba(32, 35, 41, 0.15);
+  border-radius: 20px;
+  padding: 0 20px;
+  height: auto;
+}
+.TodoItem--active {
+  background-color: #1e1e22;
+}
+.TodoItem-p {
+  margin: 24px 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #E4E6EA;
+  /* word-break: break-all; */
+  /* overflow-wrap: break-word;  */
+  overflow-wrap: anywhere;
+}
+.TodoItem-p--complete {
+  color: #6e6e6e;
+  text-decoration: line-through;
+}
+.Icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  /* background-color: #CCC; */
+}
+.Icon-check {
+  height: 25px;
+  width: 25px;
+  border: 2px solid #585858;
+  border-radius: 50%;
+  color: #232229;
+  justify-self: flex-start;
+}
+.Icon-check:hover {
+  border: 2px solid #2C5CBD;
+  transform: scale(0.95);
+}
+.Icon-check--active {
+  border: 2px solid #2C5CBD;
+  background-color: #2C5CBD;
+  color: #E4E6EA;
+}

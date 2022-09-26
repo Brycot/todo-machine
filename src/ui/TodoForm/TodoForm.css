@@ -1,0 +1,110 @@
+form {
+    width: 90%;
+    max-width: 400px;
+    background-color: #171719;
+    border-radius: 20px;
+    padding: 33px 40px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    animation: fade 1s ease;
+  }
+  
+  label {
+    text-align: center;
+    font-weight: bold;
+    font-size: #1E1E1F;
+    margin-bottom: 26px;
+    color: #E4E6EA;
+  }
+  
+  textarea {
+    background-color: #232229;
+    border: 1px solid #232229;
+    border-radius: 10px;
+    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+    color: #1E1E1F;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px;
+    height: 96px;
+    resize: none;
+    outline: 0;
+    caret-color: #A5A5A5;
+    color: #A5A5A5;
+  }
+  
+  textarea::placeholder {
+  color: #a5a5a5;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  }
+  
+  textarea:focus {
+    outline-color: #61DAFA;
+  }
+  
+  .TodoForm-buttonContainer {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .TodoForm-button {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    color: #202329;
+    font-weight: 400;
+    width: 100%;
+    height: 48px;
+    border-radius: 16px;
+    border: none;
+    font-family: 'Montserrat';
+  }
+  
+  .TodoForm-button-add {
+    border: 2px solid #2C5CBD;
+    background-color: #2C5CBD;
+    color: #E4E6EA;
+  }
+  .TodoForm-button-add:hover {
+    box-shadow: 0px 0px 5px 2px #2c5cbd98;
+  }
+  .TodoForm-button-add:active {
+    transform: scale(0.9);
+  }
+  
+  .TodoForm-button-cancel {
+    display: block;
+    background: transparent;
+    color: #E4E6EA;
+  }
+  .TodoForm-button-cancel:hover {
+    color: #707275;
+  }
+  .TodoForm-button-cancel:active {
+    transform: scale(0.9);
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 25;
+    }
+    50% {
+      opacity: 50;
+    }
+    75% {
+      opacity: 75;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+  

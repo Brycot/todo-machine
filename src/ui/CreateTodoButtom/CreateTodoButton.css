@@ -1,0 +1,27 @@
+.CreateTodoButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 64px;
+  height: 64px;
+
+  border: 1px solid #2C5CBD;
+  background-color: #2C5CBD;
+  border-radius: 50%;
+  font-size: 50px;
+  
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+
+  color: #FAFAFA;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.CreateTodoButton:hover {
+  transform: rotate(45deg);
+}
+.CreateTodoButton:focus {
+  transform: rotate(-45deg) scale(0.9);
+}

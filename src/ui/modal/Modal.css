@@ -1,0 +1,31 @@
+.ModalBackground {
+    background: rgba(28, 29, 31, 0.8);
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: fade 1s ease;
+  }
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 25;
+  }
+  50% {
+    opacity: 50;
+  }
+  75% {
+    opacity: 75;
+  }
+  100% {
+    opacity: 100;
+  }
+}
