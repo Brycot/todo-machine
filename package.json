@@ -17,7 +17,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "sudo npm run build",
+    "deploy": "gh-pages-clean gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +42,5 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "homepage": "https://brycot.github.io/todo-machine"
+  "homepage": "https://Brycot.github.io/todo-machine"
 }
