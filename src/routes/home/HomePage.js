@@ -15,6 +15,8 @@ import EmptySearchTodos from "../../ui/EmpySearchTodos";
 import ChangeAlert from "../../ui/ChangedAlert";
 import ButtonFilter from "../../ui/ButtonFilter";
 
+import '../Home.css';
+
 function HomePage() {
     const navigate = useNavigate();
     const {
@@ -49,22 +51,7 @@ function HomePage() {
                     // loading={loading}
                 />
             </TodoHeader>
-
-            <TodoList
-                totalTodos={totalTodos}
-                error={error}
-                loading={loading}
-                searchedTodos={searchedTodos}
-                onError={() => <TodosError />}
-                onLoading={() =>
-                    new Array(5).fill(1).map((a, i) => <TodosLoading key={i} />)
-                }
-                onEmptyTodos={() => <EmptyTodos />}
-                searchValue={searchValue}
-                onEmptySearchTodos={(searchValue) => (
-                    <EmptySearchTodos searchValue={searchValue} />
-                )}
-            >
+            <div className="ButtonsFilter-Container">
                 <ButtonFilter
                     type="Todos"
                     typeFilter={completedTodos}
@@ -80,12 +67,28 @@ function HomePage() {
                     unCompleted={false}
                 />
                 <ButtonFilter
-                    type="Sin Completar"
+                    type="Incompletos"
                     typeFilter={unCompletedTodos}
                     filterTodo={{ setTodoCompleted, setTodoUnCompleted }}
                     completed={false}
                     unCompleted={true}
                 />
+            </div>
+            <TodoList
+                totalTodos={totalTodos}
+                error={error}
+                loading={loading}
+                searchedTodos={searchedTodos}
+                onError={() => <TodosError />}
+                onLoading={() =>
+                    new Array(5).fill(1).map((a, i) => <TodosLoading key={i} />)
+                }
+                onEmptyTodos={() => <EmptyTodos />}
+                searchValue={searchValue}
+                onEmptySearchTodos={(searchValue) => (
+                    <EmptySearchTodos searchValue={searchValue} />
+                )}
+            >
                 {!todounCompleted &&
                     !todoCompleted &&
                     searchedTodos.map((todo) => (

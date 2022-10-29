@@ -5,8 +5,21 @@
 }
 
 .buttonFilter {
-    width: 100px;
-    height: 30px;
+    width: 112px;
+    height: 34px;
     border: 0;
     border-radius: 8px;
+    background-color: #2c5cbd;
+    box-shadow: 0px 0px 10px 2px #2c5cbd7a;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 2px;
+    transition: all 0.25;
+}
+
+.buttonFilter:active {
+    transition: all 0.25;
+
+    transform: scale(0.9);
 }

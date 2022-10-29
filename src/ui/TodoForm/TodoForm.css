@@ -20,7 +20,7 @@ form {
     display: flex;
     align-content: center;
     flex-direction: column;
-    animation: fade 0.25s ease;
+    animation: fade 0.5s ease;
     box-shadow: 0px 0px 10px 2px #03030388;
 }
 .formError {
