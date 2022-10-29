@@ -10,8 +10,10 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<HomePage />}/>
-        <Route path="/new" element={<NewTodoPage />}/>
+        <Route path="/" element={<HomePage />}>
+          <Route path="/new" element={<NewTodoPage />}/>
+        </Route>
+        
         <Route path="/edit/:id" element={<EditTodoPage />}/>
         <Route path="*" element={<p>No se encontro</p>}/>
       </Routes>

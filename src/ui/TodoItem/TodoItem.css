@@ -1,57 +1,70 @@
 .TodoItem {
-  background-color: #232229;
-  position: relative;
-  display: grid;
-  grid-template-columns: 50px 1fr 50px 50px;
-  align-items: center;
-  margin-top: 24px;
-  box-shadow: 0px 3px 6px rgba(32, 35, 41, 0.15);
-  border-radius: 20px;
-  padding: 0 20px;
-  height: auto;
+    background-color: #232229;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px 50px;
+    align-items: center;
+    margin-top: 24px;
+    box-shadow: 0px 3px 6px rgba(32, 35, 41, 0.15);
+    border-radius: 20px;
+    padding: 0 20px;
+    height: auto;
+    animation: sweepRight 0.5s ease;
 }
+
 .TodoItem--active {
-  background-color: #1e1e22;
+    background-color: #1e1e22;
 }
 .TodoItem-p {
-  margin: 24px 0;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #E4E6EA;
-  /* word-break: break-all; */
-  /* overflow-wrap: break-word;  */
-  overflow-wrap: anywhere;
+    margin: 24px 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #e4e6ea;
+    /* word-break: break-all; */
+    /* overflow-wrap: break-word;  */
+    overflow-wrap: anywhere;
 }
 .TodoItem-p--complete {
-  color: #6e6e6e;
-  text-decoration: line-through;
+    color: #6e6e6e;
+    text-decoration: line-through;
 }
 .Icon {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;
-  width: 48px;
-  font-size: 24px;
-  font-weight: bold;
-  /* background-color: #CCC; */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
+    /* background-color: #CCC; */
 }
 .Icon-check {
-  height: 25px;
-  width: 25px;
-  border: 2px solid #585858;
-  border-radius: 50%;
-  color: #232229;
-  justify-self: flex-start;
+    height: 25px;
+    width: 25px;
+    border: 2px solid #585858;
+    border-radius: 50%;
+    color: #232229;
+    justify-self: flex-start;
 }
 .Icon-check:hover {
-  border: 2px solid #2C5CBD;
-  transform: scale(0.95);
+    border: 2px solid #2c5cbd;
+    transform: scale(0.95);
 }
 .Icon-check--active {
-  border: 2px solid #2C5CBD;
-  background-color: #2C5CBD;
-  color: #E4E6EA;
+    border: 2px solid #2c5cbd;
+    background-color: #2c5cbd;
+    color: #e4e6ea;
+}
+@keyframes sweepRight {
+    0% {
+        transform: translateX(-100%) scale(0.8);
+    }
+    50% {
+        transform: translateX(0) scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

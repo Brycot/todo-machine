@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.buttonFilter {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    border-radius: 8px;
+}

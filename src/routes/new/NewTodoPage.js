@@ -1,17 +1,17 @@
-import React from 'react'
+import React from "react";
 import TodoForm from "../../ui/TodoForm";
-import { useTodos } from '../useTodos';
+import { useTodos } from "../useTodos";
 
 function NewTodoPage() {
-  const { addTodo } = useTodos();
+    const { addTodo } = useTodos();
 
-  return (
-    <TodoForm
-      label="Escribe tu nuevo TODO"
-      submitText="Añadir"
-      submitTodo={(newText) => addTodo(newText)}
-      />
-  )
+    return (
+            <TodoForm
+                label="Escribe tu nuevo TODO"
+                submitText="Añadir"
+                submitTodo={(newText) => addTodo(newText)}
+            />
+    );
 }
 
-export default NewTodoPage
+export default NewTodoPage;
