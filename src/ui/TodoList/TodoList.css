@@ -1,15 +1,16 @@
 .TodoList-Container {
-  /* outline: 1px solid red; */
-  background-color: #141416;
-  border-radius: 40px 40px 0 0;
-  width: 100%;
-  min-height: 100vh;
-  padding: 20px;
-  margin-top: 10px;
+    /* outline: 1px solid red; */
+    background-color: #141416;
+    border-radius: 40px 40px 0 0;
+    width: 100%;
+    max-width: 600px;
+    min-height: 100vh;
+    padding: 20px;
+    margin-top: 10px;
 }
 
 ul {
     margin: 0;
     padding: 0 0 56px 0;
     list-style: none;
-  }
+}
