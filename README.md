@@ -17,4 +17,4 @@ Todo List creada con React usando localstorage para la persistencia de datis añ
 
 ---
 
-## [Visitar el demo del Proyecyo](https://brycot.github.io/todo-machine/) 
+## [Visitar el demo del Proyecto](https://brycot.github.io/todo-machine/) 
